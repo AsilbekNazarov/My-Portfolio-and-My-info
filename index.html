@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <!-- Navbar items -->
+    <div class="container align-items-center d-flex my-3 navbar__body-nav">
+      <div class="">
+        <button
+          class="btn btn-light navbar-icon_custom"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+        >
+          <div class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-start offcavans__body-custom"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="offcavans-body__item">
+            <a href="#">Bosh saxifa</a>
+          </div>
+          <div class="offcavans-body__item">
+            <a href="#">Men haqimda</a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-logo__img">
+        <img class="mx-5" src="./image/logotiv.PNG" alt="logo" />
+      </div>
+
+      <!-- Button trigger modal -->
+      <div class="navbar-icon">
+        <button
+          type="button"
+          class="btn btn-light px-3 py-2 navbar-icon_custom"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header modal-search__custom">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Write & Search and found
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body modal-search__custom">
+              <div class="input-group mb-3 modal-search__custom">
+                <input
+                  type="text"
+                  class="form-control modal-search__custom"
+                  placeholder="Search"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+              </div>
+            </div>
+            <div class="modal-footer modal-search__custom">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar items -->
+    <!-- As a heading -->
+    <div class="container">
+      <nav class="container-fluid py-4 navbar__body-info">
+        <div class="navbar__body-items">
+          <a class="mx-3" href="#">Bosh Saxifa</a>
+          <a class="mx-3" href="#">Men Xaqimda</a>
+        </div>
+      </nav>
+    </div>
+    <!-- As a heading -->
+
+    <!-- section items -->
+    <div class="container">
+      <div class="mt-5">
+        <div class="row section-inner text-center">
+          <div class="col-12 col-md-8">
+            <div class="mb-3 section__info">
+              <div class="section__custom">
+                <img
+                  src="./image/Frontendimg.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body mb-4">
+                <div class="card__body-items">
+                  <h5 class="card-title">Umumiy</h5>
+                </div>
+                <br />
+                <div class="card__body-items">
+                  <h1 class="card-title">
+                    Frontend o’rganayotganda bu xatolarni takrorlamang!
+                  </h1>
+                </div>
+                <br />
+                <div class="card__body-items">
+                  <p class="card-title">
+                    Frontend ilk marta Developer Community-ga yilda taqdim
+                    etilgan va shundan beri Frontend va Frontend hamjamiyati tez
+                    sur'atlar bilan o'sib bormoqda! Ammo, odatda, odamlar
+                    Frontendni o'rganishda bir nechta xatoga yo'l
+                  </p>
+                </div>
+                <br />
+
+                <p class="card-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-emoji-angry-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M4.053 4.276a.5.5 0 0 1 .67-.223l2 1a.5.5 0 0 1 .166.76c.071.206.111.44.111.687C7 7.328 6.552 8 6 8s-1-.672-1-1.5c0-.408.109-.778.285-1.049l-1.009-.504a.5.5 0 0 1-.223-.67zm.232 8.157a.5.5 0 0 1-.183-.683A4.5 4.5 0 0 1 8 9.5a4.5 4.5 0 0 1 3.898 2.25.5.5 0 1 1-.866.5A3.5 3.5 0 0 0 8 10.5a3.5 3.5 0 0 0-3.032 1.75.5.5 0 0 1-.683.183M10 8c-.552 0-1-.672-1-1.5 0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5"
+                    />
+                  </svg>
+                  <small class="text-body-secondary mx-2">COSMOS</small>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-alarm-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5m2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.04 8.04 0 0 0 .86 5.387M11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.04 8.04 0 0 0-3.527-3.527"
+                    />
+                  </svg>
+                  <small class="text-body-secondary mx-2"
+                    >YANVAR 14, 2024</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- side items -->
+          <div class="col-12 col-md-4 side-section__items">
+            <div class="d-flex">
+              <div>
+                <input
+                  class="input__group-costom mx-1"
+                  placeholder="..."
+                  type="text"
+                />
+              </div>
+              <div class="input__group-button">
+                <button class="input__group-costom mx-3">Search</button>
+              </div>
+            </div>
+            <div class="header-side-item header-side-items my-5">
+              <div class="header__side-info px-1">
+                Frontend qudratini bilmoqchi bo'lsangiz, biz qurgan ilovalarga
+                boqing!
+              </div>
+            </div>
+            <div class="header-side-items header-side-item1 p-1 my-5">
+              <div class="header__side-info">
+                <h4>YANGI MAQOLALAR</h4>
+              </div>
+              <div class="header__side-info">
+                <a href="#"
+                  >Frontend o’rganayotganda bu xatolarni takrorlamang! Statik,
+                  final, const, dinamik, var – ning farqlari va o’xshashliklari
+                  Frontendning o’zbek segmenti! “Shared Preferences” sucks?!
+                  Frontend yo’l xaritasi!</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- side items -->
+          <div class="col-12 col-md-8">
+            <!-- section-item -->
+            <div class="my-5 section__info">
+              <div class="section__custom">
+                <img
+                  src="./image/background.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body mb-4">
+                <div class="card__body-items">
+                  <h5 class="card-title">Umumiy</h5>
+                </div>
+                <br />
+                <div class="card__body-items">
+                  <h1 class="card-title">
+                    Statik, final, const, dinamik, var – ning farqlari va
+                    o’xshashliklari
+                  </h1>
+                </div>
+                <br />
+                <div class="card__body-items">
+                  <p class="card-title">
+                    Dart - bu juda batafsil, statik tarzda yozilgan til. U sizga
+                    dasturchi sifatida o'zingiz xohlagan narsani aniq ifodalash
+                    imkonini beradigan turli xil kalit so'zlarni taklif etadi.
+                    Ayniqsa, o'zgaruvchi biriktirish haqida gap
+                  </p>
+                </div>
+                <br />
+
+                <p class="card-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-emoji-angry-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M4.053 4.276a.5.5 0 0 1 .67-.223l2 1a.5.5 0 0 1 .166.76c.071.206.111.44.111.687C7 7.328 6.552 8 6 8s-1-.672-1-1.5c0-.408.109-.778.285-1.049l-1.009-.504a.5.5 0 0 1-.223-.67zm.232 8.157a.5.5 0 0 1-.183-.683A4.5 4.5 0 0 1 8 9.5a4.5 4.5 0 0 1 3.898 2.25.5.5 0 1 1-.866.5A3.5 3.5 0 0 0 8 10.5a3.5 3.5 0 0 0-3.032 1.75.5.5 0 0 1-.683.183M10 8c-.552 0-1-.672-1-1.5 0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5"
+                    />
+                  </svg>
+                  <small class="text-body-secondary mx-2">COSMOS</small>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-alarm-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5m2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.04 8.04 0 0 0 .86 5.387M11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.04 8.04 0 0 0-3.527-3.527"
+                    />
+                  </svg>
+                  <small class="text-body-secondary mx-2">YANVAR 2, 2024</small>
+                </p>
+              </div>
+            </div>
+            <!-- section-item -->
+            <!-- section item 1 -->
+            <div class="mb-3 section__info">
+              <div class="section__custom">
+                <img src="./image/info11.png" class="card-img-top" alt="..." />
+              </div>
+              <div class="card-body mb-4">
+                <div class="card__body-items">
+                  <h5 class="card-title">Umumiy</h5>
+                </div>
+                <br />
+                <div class="card__body-items">
+                  <h1 class="card-title">“Shared Preferences” sucks?!</h1>
+                </div>
+                <br />
+                <div class="card__body-items">
+                  <p class="card-title">
+                    (- "Shared Preferences" juda yomon-mi?!) Salom ✨😊
+                    Ma'lumotlarni lokal saqlash har bir mobil ilovaning muhim
+                    tarkibiy qismidir. Flutter-da ko'plab lokal saqlash
+                    yechimlari mavjud. Ushbu maqolada biz Flutter-dagi mashhur
+                    NoSQL lokal
+                  </p>
+                </div>
+                <br />
+
+                <p class="card-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-emoji-angry-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M4.053 4.276a.5.5 0 0 1 .67-.223l2 1a.5.5 0 0 1 .166.76c.071.206.111.44.111.687C7 7.328 6.552 8 6 8s-1-.672-1-1.5c0-.408.109-.778.285-1.049l-1.009-.504a.5.5 0 0 1-.223-.67zm.232 8.157a.5.5 0 0 1-.183-.683A4.5 4.5 0 0 1 8 9.5a4.5 4.5 0 0 1 3.898 2.25.5.5 0 1 1-.866.5A3.5 3.5 0 0 0 8 10.5a3.5 3.5 0 0 0-3.032 1.75.5.5 0 0 1-.683.183M10 8c-.552 0-1-.672-1-1.5 0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5"
+                    />
+                  </svg>
+                  <small class="text-body-secondary mx-2">COSMOS</small>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-alarm-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5m2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.04 8.04 0 0 0 .86 5.387M11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.04 8.04 0 0 0-3.527-3.527"
+                    />
+                  </svg>
+                  <small class="text-body-secondary mx-2"
+                    >YANVAR 19, 2023</small
+                  >
+                </p>
+              </div>
+            </div>
+            <!-- section item 1 -->
+            <!-- salom dunyo -->
+            <div class="my-5 section__info">
+              <div class="card-body mb-4">
+                <div class="card__body-items my-3">
+                  <h5 class="card-title">Umumiy</h5>
+                </div>
+                <br />
+                <div class="card__body-items">
+                  <h1 class="card-title">Salom Dunyo!</h1>
+                </div>
+                <br />
+                <div class="card__body-items">
+                  <p class="card-title">
+                    Bu mening birinchi maqolam. Men Frontendni huddi sizdek
+                    yaxshi ko'raman :) Men davom etishim uchun kommentariyada
+                    meni qo'llang 👇
+                  </p>
+                </div>
+                <br />
+
+                <p class="card-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-emoji-angry-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M4.053 4.276a.5.5 0 0 1 .67-.223l2 1a.5.5 0 0 1 .166.76c.071.206.111.44.111.687C7 7.328 6.552 8 6 8s-1-.672-1-1.5c0-.408.109-.778.285-1.049l-1.009-.504a.5.5 0 0 1-.223-.67zm.232 8.157a.5.5 0 0 1-.183-.683A4.5 4.5 0 0 1 8 9.5a4.5 4.5 0 0 1 3.898 2.25.5.5 0 1 1-.866.5A3.5 3.5 0 0 0 8 10.5a3.5 3.5 0 0 0-3.032 1.75.5.5 0 0 1-.683.183M10 8c-.552 0-1-.672-1-1.5 0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5"
+                    />
+                  </svg>
+                  <small class="text-body-secondary mx-2">COSMOS</small>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-alarm-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5m2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.04 8.04 0 0 0 .86 5.387M11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.04 8.04 0 0 0-3.527-3.527"
+                    />
+                  </svg>
+                  <small class="text-body-secondary mx-2"
+                    >DEKABR 12, 2023</small
+                  >
+                </p>
+              </div>
+            </div>
+            <!-- salom dunyo -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-dark footer-item py-3">
+      <p>©️ By Wep Developer - Nazarov Asilbek</p>
+    </footer>
+    <!-- footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
